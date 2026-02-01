@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="WDD 131 Ponder - DOM Basics" />
+  <meta name="author" content="Your Name" />
+  <title>Ponder - DOM Basics</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main id="content">
+    <h1 id="pageTitle">HTML, CSS, and JS</h1>
+    <p id="tagline">The foundational technologies that power websites and web applications</p>
+    <hr id="rule">
+
+    <img
+      id="trifectaImg"
+      src="https://wddbyui.github.io/wdd131/images/trifecta.png"
+      alt="JS, CSS, and HTML logos"
+    >
+
+    <div class="controls">
+      <label for="webdevlist">Choose One:</label>
+      <select name="code" id="webdevlist">
+        <option value="choose">Choose One:</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+        <option value="all">Show All</option>
+      </select>
+
+      <button id="toggleThemeBtn" type="button">Toggle Theme</button>
+    </div>
+
+    <section id="topics">
+      <article class="topic" id="topic-html">
+        <h2>HyperText Markup Language</h2>
+        <ul class="list">
+          <li>Defines the structure and content of a web page.</li>
+          <li>Without HTML there's nothing for the browser to display.</li>
+        </ul>
+      </article>
+
+      <article class="topic" id="topic-css">
+        <h2>Cascading Style Sheets</h2>
+        <ul class="list">
+          <li>Controls how the HTML elements look.</li>
+          <li>Without CSS pages look plain and unstyled.</li>
+        </ul>
+      </article>
+
+      <article class="topic" id="topic-js">
+        <h2>JavaScript</h2>
+        <ul class="list">
+          <li>Adds interactivity and dynamic behavior.</li>
+          <li>Without JavaScript nothing on the page responds dynamically to user actions.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
