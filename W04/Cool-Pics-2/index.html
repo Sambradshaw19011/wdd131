@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Coolpics gallery" />
+    <meta name="author" content="Sam Bradshaw" />
+    <title>Coolpics</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="coolpics.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 class="logo">Coolpics</h1>
+
+            <button id="menuButton" class="menu-button" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="siteNav">
+                <span class="menu-icon" aria-hidden="true"></span>
+            </button>
+
+            <nav id="siteNav" class="site-nav" aria-label="Main">
+                <ul id="navList" class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="intro">
+            <h2>Photo Gallery</h2>
+            <p>Tap an image to view it larger.</p>
+        </section>
+
+        <section class="gallery" aria-label="Photo gallery">
+            <img class="gallery-img" src="https://wddbyui.github.io/wdd131/images/norris-full.jpg"
+                data-full="https://wddbyui.github.io/wdd131/images/norris-full.jpg" alt="Hot springs landscape"
+                loading="lazy" />
+
+            <img class="gallery-img"
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=60"
+                data-full="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2200&q=80"
+                alt="Mountain ridge at sunrise" loading="lazy" />
+
+            <img class="gallery-img"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=60"
+                data-full="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=80"
+                alt="Forest road" loading="lazy" />
+
+            <img class="gallery-img"
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=60"
+                data-full="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2200&q=80"
+                alt="Ocean wave" loading="lazy" />
+
+            <img class="gallery-img"
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=60"
+                data-full="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2200&q=80"
+                alt="Lake and mountains" loading="lazy" />
+
+            <img class="gallery-img"
+                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=60"
+                data-full="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2200&q=80"
+                alt="Mountain valley" loading="lazy" />
+
+            <img class="gallery-img"
+                src="https://images.unsplash.com/photo-1458668383970-8ddd3927deed?auto=format&fit=crop&w=900&q=60"
+                data-full="https://images.unsplash.com/photo-1458668383970-8ddd3927deed?auto=format&fit=crop&w=2200&q=80"
+                alt="Snowy mountain peak" loading="lazy" />
+
+            <img class="gallery-img"
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=60"
+                data-full="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2200&q=80"
+                alt="Green forest canopy" loading="lazy" />
+
+            <img class="gallery-img"
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=60"
+                data-full="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=2200&q=80"
+                alt="Night sky with stars" loading="lazy" />
+        </section>
+    </main>
+
+    <div id="modalOverlay" class="modal-overlay" hidden aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true" aria-label="Image preview">
+            <button id="modalClose" class="modal-close" type="button" aria-label="Close image">×</button>
+            <img id="modalImg" class="modal-img" alt="" />
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Coolpics</p>
+    </footer>
+</body>
+
+</html>
