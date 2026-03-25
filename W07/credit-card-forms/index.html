@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Form</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><text y=%2250%22 font-size=%2250%22>💳</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <script src="creditcard.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <form class="card-form" id="creditCardForm" novalidate>
+            <div class="card-front">
+                <div class="card-top">
+                    <p>Total: $1920</p>
+                    <span class="card-icon" aria-hidden="true">💳</span>
+                </div>
+
+                <div class="field card-number-field">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" name="cardNumber" maxlength="16" inputmode="numeric" required>
+                </div>
+
+                <div class="card-bottom">
+                    <div class="field">
+                        <label for="cardHolder">Card Holder</label>
+                        <input type="text" id="cardHolder" name="cardHolder" required>
+                    </div>
+
+                    <div class="expiration-group">
+                        <label id="expirationDate" for="month">Expiration</label>
+                        <div class="expiration-inputs">
+                            <input type="text" id="month" name="expMonth" placeholder="MM" maxlength="2"
+                                inputmode="numeric" aria-labelledby="expirationDate" required>
+                            <input type="text" id="year" name="expYear" placeholder="YY" maxlength="2"
+                                inputmode="numeric" aria-labelledby="expirationDate" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-back">
+                <div class="stripe"></div>
+                <div class="cvc-area">
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" name="cvc" maxlength="3" inputmode="numeric" required>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+            <p class="message" id="formMessage" aria-live="polite"></p>
+        </form>
+    </main>
+</body>
+
+</html>
