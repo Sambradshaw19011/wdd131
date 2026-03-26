@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Sections</title>
+    <script defer src="ponder.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #222;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            margin-bottom: 24px;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            align-items: end;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        input {
+            padding: 8px 10px;
+            font-size: 1rem;
+            min-width: 180px;
+        }
+
+        button {
+            padding: 9px 16px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            background: #1f6feb;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #f3f3f3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="courseName"></h1>
+    <h2 id="courseCode"></h2>
+
+    <div class="controls">
+        <div class="field">
+            <label for="sectionNumber">Section Number</label>
+            <input id="sectionNumber" type="number" />
+        </div>
+        <button id="enrollStudent">Enroll Student</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Section#</th>
+                <th>Room#</th>
+                <th>#Enrolled</th>
+                <th>Days</th>
+                <th>Instructor</th>
+            </tr>
+        </thead>
+        <tbody id="sections"></tbody>
+    </table>
+</body>
+
+</html>
