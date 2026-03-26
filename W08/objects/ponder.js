@@ -1,6 +1,6 @@
 const aCourse = {
-    code: "CSE121b",
-    name: "Javascript Language",
+    code: "WDD131",
+    name: "W08 - Ponder JS Objects",
     logo: "images/js-logo.png",
     sections: [
         { sectionNum: 1, roomNum: "STC 353", enrolled: 26, days: "TTh", instructor: "Bro T" },
