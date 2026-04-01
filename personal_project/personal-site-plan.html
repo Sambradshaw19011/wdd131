@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Site plan for Sam Bradshaw's WDD 131 final portfolio project." />
+    <title>Sam Bradshaw | Site Plan</title>
     <link rel="stylesheet" href="styles/site-plan.css" />
-    <title>Sam Bradshaw Personal Project Site Plan</title>
 </head>
 
 <body>
@@ -18,11 +19,10 @@
     <main>
         <section>
             <h2>Site Name</h2>
-            <p><strong>Site Name:</strong> sam-portfolio</p>
+            <p><strong>Portfolio Project</strong></p>
             <p>
-                This name is simple, professional, and directly represents the purpose of the site.
-                It will work well as part of a GitHub Pages URL and clearly communicates that the site
-                is a personal portfolio.
+                This name works well because the site is meant to act as a professional portfolio
+                that presents my background, skills, projects, and contact information in one place.
             </p>
         </section>
 
@@ -30,10 +30,9 @@
             <h2>Purpose</h2>
             <p>
                 The purpose of this site is to present a professional portfolio for Sam Bradshaw that
-                highlights technical skills, work experience, and programming projects in one organized
-                location. The site will help employers, recruiters, and collaborators quickly learn about
-                Sam’s background and evaluate his qualifications through clear content, visual design,
-                and interactive features.
+                highlights work experience, technical skills, and selected programming and data projects.
+                The site will give employers, instructors, and collaborators a clear way to review my
+                background, see the kind of work I have done, and contact me professionally.
             </p>
         </section>
 
@@ -41,28 +40,26 @@
             <h2>Audience</h2>
             <p>
                 The primary audience for this site is employers, recruiters, internship coordinators,
-                and professional contacts who want to review Sam’s skills and past work. A secondary
-                audience includes classmates, instructors, and networking contacts who may want to
-                explore projects, experience, and contact information in an easy-to-use format.
+                and professional contacts who want to learn about my experience and technical abilities.
+                A secondary audience includes classmates and instructors who may review my web
+                development progress and project work.
             </p>
         </section>
 
         <section>
             <h2>Description of Dynamic Elements</h2>
             <p>
-                JavaScript will be used to make the site interactive and meet WDD 131 requirements.
-                A projects page will load project information from an array of objects and display it
-                dynamically in the DOM. Users will be able to filter projects by category such as web,
-                Python, data, or school projects. A search feature will let visitors type keywords and
-                instantly narrow the visible projects. Buttons and form controls will listen for user
-                events and update the displayed content.
+                JavaScript will be used most heavily on the Projects page. Project information will be
+                stored in an array of objects and displayed dynamically in the page. Visitors will be
+                able to search projects by keyword and filter them by category such as web, Python,
+                data, or school work.
             </p>
             <p>
-                The site will also include conditional logic, such as showing a “no results found”
-                message when a filter or search returns no matches. Array methods such as
-                <strong>forEach</strong>, <strong>filter</strong>, and <strong>map</strong> will be used
-                to organize and render data. Multiple JavaScript functions will separate tasks like
-                rendering cards, filtering data, and handling events so the code stays organized and readable.
+                The site will use multiple JavaScript functions, event listeners, DOM interaction,
+                conditional logic, arrays, objects, and array methods such as
+                <strong>filter</strong>, <strong>map</strong>, <strong>forEach</strong>, and
+                <strong>some</strong>. JavaScript will also be used for a responsive mobile navigation
+                menu and for updating the current year in the footer.
             </p>
         </section>
 
@@ -70,12 +67,12 @@
             <h2>Logo</h2>
             <img src="images/logo.png" alt="Sam Bradshaw logo" class="logo" />
             <p>
-                The logo gives the site a professional identity and will appear in the header across the site.
+                The logo will appear in the header and help give the site a consistent identity across pages.
             </p>
         </section>
 
         <section>
-            <h2>Style Guide</h2>
+            <h2>Colors and Fonts</h2>
 
             <h3>Color Palette</h3>
             <table class="colors">
@@ -88,8 +85,8 @@
                 <tr>
                     <td class="primary">#206791</td>
                     <td class="secondary">#184d6d</td>
-                    <td class="accent">#333333</td>
-                    <td class="background">#fcfcfc</td>
+                    <td class="accent">#102a43</td>
+                    <td class="background">#f8fbfd</td>
                 </tr>
             </table>
 
@@ -97,85 +94,65 @@
             <p><strong>Heading Font:</strong> Georgia, "Times New Roman", serif</p>
             <p><strong>Paragraph Font:</strong> Arial, Helvetica, sans-serif</p>
 
-            <h3>Why These Choices</h3>
+            <h3>Design Rationale</h3>
             <p>
-                The blue color palette creates a clean and trustworthy professional look. The serif heading
-                font gives the site a polished feel, while the sans-serif paragraph font improves readability
-                on screens, especially for mobile users.
+                The blue color palette creates a professional and trustworthy appearance. The serif
+                heading font gives the site a polished feel, while the sans-serif body font improves
+                readability on both mobile and desktop screens.
             </p>
         </section>
 
         <section>
-            <h2>Navigation</h2>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Experience</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
-            </nav>
-            <p>
-                The site will use simple top navigation so users can quickly move between the main sections.
-            </p>
-        </section>
-
-        <section>
-            <h2>Content Plan</h2>
+            <h2>Content</h2>
 
             <h3>Home Page</h3>
             <p>
-                The home page will introduce Sam Bradshaw with a professional headline, short biography,
-                and featured skills. It will include a profile image or graphic, a short welcome message,
-                and quick links to important sections of the site.
+                The home page will introduce me with a professional headline, a short biography, a
+                list of highlighted skills, and quick links to the projects and contact pages. It will
+                also include a profile image to make the page more personal and visually engaging.
             </p>
 
             <h3>Experience Page</h3>
             <p>
-                This page will present work experience, job titles, responsibilities, and major accomplishments.
-                It will help visitors understand Sam’s professional background and real-world business experience.
+                The experience page will summarize my work history, responsibilities, and measurable
+                accomplishments. It will help visitors understand my professional background in business,
+                coordination, communication, and analysis.
             </p>
 
             <h3>Projects Page</h3>
             <p>
-                This page will showcase school and personal programming projects. Each project card will include
-                a title, category, short description, technologies used, and possibly a GitHub link. This page
-                will contain the main JavaScript interactivity with filtering and searching.
+                The projects page will feature project cards with titles, descriptions, categories,
+                technologies, and links. This page will include interactive search and filter controls
+                built with JavaScript so users can quickly find relevant projects.
             </p>
 
             <h3>Contact Page</h3>
             <p>
-                This page will include email, GitHub, LinkedIn, and other professional contact methods. It may
-                also include a styled contact form layout for practice, even if the final form does not submit data.
+                The contact page will provide my email, phone number, GitHub, and LinkedIn information.
+                It will also include a short professional summary about the kinds of opportunities and
+                collaboration I am interested in.
             </p>
-        </section>
 
-        <section>
-            <h2>Planned Images and Assets</h2>
+            <h3>Images and Assets</h3>
             <ul>
                 <li>Logo image</li>
-                <li>Profile or portfolio-related image for the home page</li>
-                <li>Technology or project-related icons/images</li>
-                <li>Social media icons for GitHub and LinkedIn</li>
+                <li>Profile image for the home page</li>
+                <li>GitHub icon</li>
+                <li>LinkedIn icon</li>
             </ul>
         </section>
 
         <section>
             <h2>Wireframes</h2>
 
-            <h3>Mobile View</h3>
-            <p>
-                Mobile layout will stack content vertically with navigation, introduction, featured content,
-                and footer arranged in a single-column format.
-            </p>
-            <img src="images/personal-wireframe.png" alt="Mobile wireframe for personal project site"
-                class="wireframe" />
+            <h3>Home Page Wireframe</h3>
+            <img src="images/home-wireframe.png" alt="Home page wireframe" class="wireframe" />
 
-            <h3>Desktop View</h3>
-            <p>
-                Desktop layout will use wider spacing, multiple columns where appropriate, and more prominent
-                project cards and section groupings.
-            </p>
-            <img src="images/subpage-1.png" alt="Desktop wireframe for subpage one" class="wireframe" />
-            <img src="images/subpage-2.png" alt="Desktop wireframe for subpage two" class="wireframe" />
+            <h3>Projects Page Wireframe</h3>
+            <img src="images/projects-wireframe.png" alt="Projects page wireframe" class="wireframe" />
+
+            <h3>Contact Page Wireframe</h3>
+            <img src="images/contact-wireframe.png" alt="Contact page wireframe" class="wireframe" />
         </section>
     </main>
 </body>
