@@ -4,9 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Sam Bradshaw Portfolio</title>
   <meta name="description"
-    content="Projects page for Sam Bradshaw portfolio site with searchable and filterable project cards." />
-  <title>Sam Bradshaw | Projects</title>
+    content="Project portfolio for Sam Bradshaw featuring web development, Python, data, and school projects with interactive filters." />
+  <meta name="author" content="Sam Bradshaw" />
+
+  <meta property="og:title" content="Projects | Sam Bradshaw Portfolio" />
+  <meta property="og:description"
+    content="Explore Sam Bradshaw's projects in web development, data analysis, and programming." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/preview.png" />
+  <meta property="og:url" content="https://sambradshaw19011.github.io/wdd131/personal_project/projects.html" />
+
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles/style.css" />
   <script src="scripts/main.js" defer></script>
 </head>
@@ -53,11 +67,11 @@
         <input type="search" id="searchInput" class="search-input" placeholder="Search by title, skill, or keyword" />
 
         <div class="filter-buttons" id="filterButtons">
-          <button class="filter-btn active-filter" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="web">Web</button>
-          <button class="filter-btn" data-filter="python">Python</button>
-          <button class="filter-btn" data-filter="data">Data</button>
-          <button class="filter-btn" data-filter="school">School</button>
+          <button type="button" class="filter-btn active-filter" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="web">Web</button>
+          <button type="button" class="filter-btn" data-filter="python">Python</button>
+          <button type="button" class="filter-btn" data-filter="data">Data</button>
+          <button type="button" class="filter-btn" data-filter="school">School</button>
         </div>
 
         <p id="resultsCount" class="results-count"></p>
